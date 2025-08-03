@@ -70,6 +70,7 @@ export default {
 			fontFamily: {
 				'bricolage': ['Bricolage Grotesque', 'sans-serif'],
 				'geist': ['Geist', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
