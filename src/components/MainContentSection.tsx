@@ -61,13 +61,7 @@ export const MainContentSection = (): JSX.Element => {
   return (
     <section className="flex flex-col w-full items-start gap-[90px] relative pt-24">
       {/* Image copy 6 after hero section */}
-      <div className="w-full flex justify-center pt-16 pb-12">
-        <img
-          className="w-full max-w-[1200px] h-auto object-contain"
-          alt="Hero section illustration"
-          src="/lovable-uploads/image copy 6.png"
-        />
-      </div>
+
 
       {/* Features Section */}
       <div className="flex flex-col w-full items-center gap-20 px-7 py-0 pt-20">
@@ -216,7 +210,7 @@ export const MainContentSection = (): JSX.Element => {
             </header>
             
             {/* Image copy 4 placed below the description */}
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center mb-16">
               <img
                 className="w-full max-w-[1000px] h-auto object-contain"
                 alt="Process illustration"
@@ -224,14 +218,37 @@ export const MainContentSection = (): JSX.Element => {
               />
             </div>
             
-            {/* Image copy 5 below image copy 4 */}
-            <div className="w-full flex justify-center pt-8 pb-16">
-              <img
-                className="w-full max-w-[800px] h-auto object-contain"
-                alt="Additional process illustration"
-                src="/lovable-uploads/image copy 5.png"
-              />
+            {/* Testimonial Card below image copy 4 */}
+            <div className="w-full flex justify-center mb-32">
+              <div className="flex items-center bg-white p-6 rounded-lg max-w-4xl mx-auto">
+                {/* Profile Image Section */}
+                <div className="flex-shrink-0 mr-8">
+                  <div className="w-32 h-32 rounded-lg overflow-hidden">
+                    <img 
+                      src="/lovable-uploads/guy.webp" 
+                      alt="Anand Malhotra"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* Content Section */}
+                <div className="flex-1 text-black">
+                  {/* Testimonial Quote */}
+                  <blockquote className="text-2xl font-medium leading-relaxed mb-6">
+                    "Easemyexpo has transformed how our team connects, in exhibitions. It has made our work more efficient."
+                  </blockquote>
+                  
+                  {/* Attribution */}
+                  <div className="text-gray-600">
+                    <p className="font-medium text-base">Anand Malhotra, Gravity Technologies</p>
+                  </div>
+                </div>
+              </div>
             </div>
+            
+            {/* Image copy 5 below testimonial */}
+
 
           </div>
         </div>
