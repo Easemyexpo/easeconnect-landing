@@ -55,44 +55,22 @@ const features = [
 ];
 
 // Getting started steps data
-const gettingStartedSteps = [
-  {
-    title: "Chat and Collaboration",
-    description: "Seamless Collaboration for Effective Meetings",
-    details:
-      "Easily schedule and manage meetings, collaborate in real-time, and keep everyone aligned for successful team interactions and faster decision-making.",
-    imageSrc: "/group-24.png",
-    iconSrc: "/svg.svg",
-    zIndex: 30,
-    top: "100px",
-  },
-  {
-    title: "Planning and Managing",
-    description: "Efficient Planning and Real-Time Tracking",
-    details:
-      "Plan tasks, set priorities, and track progress with ease to ensure projects stay on track and deadlines are met with minimal effort.",
-    imageSrc: "/group-25.png",
-    iconSrc: "/svg-2.svg",
-    zIndex: 20,
-    top: "50px",
-  },
-  {
-    title: "Smart Matching",
-    description: "Organize Events and Share Documents",
-    details:
-      "Effortlessly manage events, share important documents, and collaborate with your team to ensure everything is in one place and easily accessible.",
-    imageSrc: "/menu.png",
-    iconSrc: "/svg-1.svg",
-    zIndex: 10,
-    top: "0",
-  },
-];
+const gettingStartedSteps = [];
 
 export const MainContentSection = (): JSX.Element => {
   return (
     <section className="flex flex-col w-full items-start gap-[90px] relative pt-24">
+      {/* Image copy 6 after hero section */}
+      <div className="w-full flex justify-center pt-16 pb-12">
+        <img
+          className="w-full max-w-[1200px] h-auto object-contain"
+          alt="Hero section illustration"
+          src="/lovable-uploads/image copy 6.png"
+        />
+      </div>
+
       {/* Features Section */}
-      <div className="flex flex-col w-full items-center gap-20 px-7 py-0">
+      <div className="flex flex-col w-full items-center gap-20 px-7 py-0 pt-20">
         <div className="flex flex-col w-full items-center gap-12">
           {/* Section Header */}
           <header className="w-full text-center">
@@ -182,29 +160,28 @@ export const MainContentSection = (): JSX.Element => {
       </div>
 
       {/* Collaboration Section */}
-      <div className="flex flex-col min-h-[400px] w-full items-center pt-24 pb-40 px-[120px] relative">
-        <div className="flex flex-col max-w-[1200px] w-full items-start relative">
-          <div className="flex items-start justify-center px-[205px] py-0 relative w-full">
-            <div className="inline-flex flex-col max-w-[790px] items-start relative self-stretch">
-              <div className="flex flex-col items-center px-[37px] py-0 relative w-full">
-                <h2 className="font-bricolage font-semibold text-black text-[69.5px] text-center tracking-[-1.44px] leading-[72px]">
-                  More collaboration,
-                  <br />
-                  better communication
-                </h2>
-              </div>
+      <div className="flex flex-col min-h-[350px] w-full items-center pt-16 pb-24 px-[60px] relative">
+        <div className="flex flex-col max-w-[1000px] w-full items-center relative">
+          <div className="flex items-center justify-between w-full relative">
+            <img
+              className="w-[240px] h-[240px] object-contain"
+              alt="Left decoration"
+              src="/lovable-uploads/image copy 2.png"
+            />
+            
+            <div className="flex flex-col items-center text-center">
+              <h2 className="font-bricolage font-semibold text-black text-[48px] tracking-[-1.44px] leading-[52px]">
+                More collaboration
+              </h2>
+              <h2 className="font-bricolage font-semibold text-black text-[48px] tracking-[-1.44px] leading-[52px]">
+                better communication
+              </h2>
             </div>
 
             <img
-              className="absolute w-[155px] h-[300px] -top-14 left-[63px]"
-              alt="Decorative element"
-              src="/646b87b78fb7b113600b2a07-group-20627397-svg.svg"
-            />
-
-            <img
-              className="absolute w-[159px] h-[298px] top-[-53px] left-[1005px]"
-              alt="Decorative element"
-              src="/646b87b74b286fbdc61e8fdb-group-20627398-svg.svg"
+              className="w-[240px] h-[240px] object-contain"
+              alt="Right decoration"
+              src="/lovable-uploads/image copy.png"
             />
           </div>
         </div>
@@ -212,101 +189,48 @@ export const MainContentSection = (): JSX.Element => {
 
       {/* Getting Started Section */}
       <div className="w-full relative">
-        <div className="relative w-full max-w-[1482px] mx-auto px-6">
+        <div className="relative w-full max-w-[1200px] mx-auto px-6">
           <img
-            className="absolute w-[553px] h-[105px] top-[209px] right-0"
-            alt="Abstract decoration"
-            src="/image---abstract.svg"
+            className="absolute w-[120px] h-[100px] top-[140px] right-[80px] z-40"
+            alt="Arrow pointing to cards"
+            src="/lovable-uploads/image copy 3.png"
           />
 
-          <div className="flex flex-col w-full max-w-[1030px] items-start gap-[90px]">
+          <div className="flex flex-col w-full items-center gap-[60px]">
             {/* Section Header */}
             <header className="w-full overflow-hidden">
-              <div className="flex flex-col items-center gap-[23px] max-w-[1100px] mx-auto">
-                <h2 className="font-bricolage font-medium text-[52px] text-center tracking-[-2.75px] leading-[50px]">
-                  <span className="text-emerald-500 tracking-[-1.43px]">
+              <div className="flex flex-col items-center gap-[20px] w-full mx-auto text-center">
+                <h2 className="font-bricolage font-medium text-[42px] text-center tracking-[-2.0px] leading-[45px]">
+                  <span className="text-emerald-500 tracking-[-1.4px]">
                     Get Started{" "}
                   </span>
-                  <span className="text-black tracking-[-1.43px]">
+                  <span className="text-black tracking-[-1.4px]">
                     in 3 easy steps
                   </span>
                 </h2>
-                <p className="font-geist text-[#41464c] text-[32px] text-center tracking-[-1.53px] leading-[49.7px] max-w-[930px]">
+                <p className="font-geist text-[#41464c] text-[24px] text-center tracking-[-0.9px] leading-[32px] max-w-[750px] mx-auto">
                   Reduce manual work and streamline your ad tracking and
                   performance analytics, so you can focus on scaling profitably.
                 </p>
               </div>
             </header>
-
-            {/* Steps Cards */}
-            <div className="w-full">
-              <div className="relative h-[660px] w-full">
-                {gettingStartedSteps.map((step, index) => (
-                  <Card
-                    key={index}
-                    className={`absolute w-full ${index === 0 ? "max-w-[1030px]" : index === 1 ? "max-w-[950px] left-10" : "max-w-[880px] left-[75px]"} 
-                    ${index === 0 ? "h-[560px]" : index === 1 ? "h-[496px]" : "h-[440px]"} 
-                    ${step.top} left-0 bg-white rounded-xl overflow-hidden shadow-[0px_9px_50px_#0000000d] 
-                    ${index !== 0 ? (index === 1 ? "opacity-70" : "opacity-50") : ""}`}
-                    style={{ zIndex: step.zIndex }}
-                  >
-                    <CardContent className="p-0 h-full">
-                      <div className="relative h-full rounded-xl">
-                        {/* Card Header */}
-                        <div className="w-full h-16 bg-[#ececec] rounded-xl flex items-center px-[30px]">
-                          <img
-                            className="w-7 h-7"
-                            alt={`${step.title} icon`}
-                            src={step.iconSrc}
-                          />
-                          <span className="ml-2 font-geist font-medium text-[#111111] text-[16.7px] leading-[27px]">
-                            {step.title}
-                          </span>
-                        </div>
-
-                        {/* Card Content */}
-                        <div className="w-full h-[calc(100%-64px)] bg-white flex">
-                          <div className="w-[400px] pt-10 pl-10">
-                            <h3 className="font-inter text-[#111111] text-[31px] leading-[44.8px] mb-5">
-                              {step.description
-                                .split("<br />")
-                                .map((line, i) => (
-                                  <React.Fragment key={i}>
-                                    {line}
-                                    {i <
-                                      step.description.split("<br />").length -
-                                        1 && <br />}
-                                  </React.Fragment>
-                                ))}
-                            </h3>
-                            <p className="font-inter font-medium text-[#4c4c4c] text-[16.7px] leading-[27px]">
-                              {step.details.split("<br />").map((line, i) => (
-                                <React.Fragment key={i}>
-                                  {line}
-                                  {i <
-                                    step.details.split("<br />").length - 1 && (
-                                    <br />
-                                  )}
-                                </React.Fragment>
-                              ))}
-                            </p>
-                          </div>
-                          <div className="flex-1 pt-10 pl-[60px]">
-                            <img
-                              className="w-full h-auto"
-                              alt={`${step.title} illustration`}
-                              src={step.imageSrc}
-                            />
-                          </div>
-                        </div>
-
-                        {/* Border */}
-                        <div className="absolute inset-0 rounded-xl border-2 border-solid border-white" />
-                      </div>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+            
+            {/* Image copy 4 placed below the description */}
+            <div className="w-full flex justify-center">
+              <img
+                className="w-full max-w-[1000px] h-auto object-contain"
+                alt="Process illustration"
+                src="/lovable-uploads/image copy 4.png"
+              />
+            </div>
+            
+            {/* Image copy 5 below image copy 4 */}
+            <div className="w-full flex justify-center pt-8 pb-16">
+              <img
+                className="w-full max-w-[800px] h-auto object-contain"
+                alt="Additional process illustration"
+                src="/lovable-uploads/image copy 5.png"
+              />
             </div>
 
           </div>
