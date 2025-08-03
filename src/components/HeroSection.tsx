@@ -3,10 +3,10 @@ import { Sparkles, MessageCircleMore, Users, Megaphone } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-[85vh] overflow-hidden bg-white">
-      {/* First Icon - Sparkles (Top Left) */}
+    <section className="relative w-full min-h-[70vh] md:min-h-[85vh] overflow-hidden bg-white">
+      {/* First Icon - Sparkles (Top Left) - Hidden on mobile */}
       <div 
-        className="absolute"
+        className="absolute hidden lg:block"
         style={{
           width: '84.6px',
           height: '84.99px',
@@ -51,9 +51,9 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* Second Icon - MessageCircleMore (Bottom Left) */}
+      {/* Second Icon - MessageCircleMore (Bottom Left) - Hidden on mobile */}
       <div 
-        className="absolute"
+        className="absolute hidden lg:block"
         style={{
           width: '84.02px',
           height: '84.02px',
@@ -100,9 +100,9 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* Third Icon - Users (Top Right) */}
+      {/* Third Icon - Users (Top Right) - Hidden on mobile */}
       <div 
-        className="absolute"
+        className="absolute hidden lg:block"
         style={{
           width: '84.64px',
           height: '84.94px',
@@ -149,9 +149,9 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* Fourth Icon - Megaphone (Bottom Right) */}
+      {/* Fourth Icon - Megaphone (Bottom Right) - Hidden on mobile */}
       <div 
-        className="absolute"
+        className="absolute hidden lg:block"
         style={{
           width: '84.6px',
           height: '84.99px',
@@ -197,14 +197,14 @@ const HeroSection = () => {
       </div>
 
       {/* Green fade from bottom of hero to half of interface image */}
-      <div className="absolute bottom-0 left-0 right-0 h-[75vh] bg-gradient-to-t from-emerald-200/70 via-emerald-100/40 to-transparent pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-[50vh] md:h-[75vh] bg-gradient-to-t from-emerald-200/70 via-emerald-100/40 to-transparent pointer-events-none"></div>
 
-      <div className="max-w-[1282px] mx-auto px-4 pt-16 relative z-10">
+      <div className="max-w-[1282px] mx-auto px-4 pt-8 md:pt-16 relative z-10">
         {/* Hero Text Section with 3D perspective grid background */}
-        <div className="text-center mb-12 relative">
-          {/* 3D perspective grid background */}
+        <div className="text-center mb-8 md:mb-12 relative">
+          {/* 3D perspective grid background - Hidden on mobile */}
           <div 
-            className="absolute opacity-[0.25] pointer-events-none"
+            className="absolute opacity-[0.25] pointer-events-none hidden md:block"
             style={{
               backgroundImage: `
                 linear-gradient(rgba(34, 197, 94, 0.6) 1px, transparent 1px),
@@ -231,25 +231,25 @@ const HeroSection = () => {
             }}
           ></div>
           
-          <h1 className="font-bricolage font-semibold text-[58px] leading-[62px] tracking-[-2.3px] text-hero-text mb-6 relative z-10">
+          <h1 className="font-bricolage font-semibold text-[32px] md:text-[48px] lg:text-[58px] leading-[36px] md:leading-[52px] lg:leading-[62px] tracking-[-1.5px] md:tracking-[-2.0px] lg:tracking-[-2.3px] text-hero-text mb-4 md:mb-6 relative z-10 px-4">
             Explore, Connect, Build<br />
             Connections built right!
           </h1>
           
-          <p className="max-w-[900px] mx-auto font-geist font-normal text-[19px] leading-[34px] text-hero-subtitle mb-8 relative z-10">
-            EaseMyExpo helps you connect, discover, and keep the conversation going—before, during, <br />
+          <p className="max-w-[900px] mx-auto font-geist font-normal text-[16px] md:text-[18px] lg:text-[19px] leading-[24px] md:leading-[28px] lg:leading-[34px] text-hero-subtitle mb-6 md:mb-8 relative z-10 px-4">
+            EaseMyExpo helps you connect, discover, and keep the conversation going—before, during, <br className="hidden md:block" />
             and after the event. Join a community built for exhibitors, visitors, and everything in between.
           </p>
           
-          <Button variant="hero" size="hero" className="font-semibold relative z-10">
+          <Button variant="hero" size="hero" className="font-semibold relative z-10 text-sm md:text-base">
             Get Started →
           </Button>
         </div>
 
         {/* Interface Mockup Section */}
-        <div className="relative mt-12 mb-12">
+        <div className="relative mt-8 md:mt-12 mb-8 md:mb-12">
           {/* Main interface mockup with your expo booth image */}
-          <div className="relative bg-white rounded-[2.5rem] shadow-2xl border-[16px] border-emerald-500 overflow-hidden max-w-4xl mx-auto">
+          <div className="relative bg-white rounded-[1.5rem] md:rounded-[2.5rem] shadow-2xl border-[8px] md:border-[16px] border-emerald-500 overflow-hidden max-w-4xl mx-auto">
             {/* Your uploaded expo interface image */}
             <img 
               src="/lovable-uploads/54746e26-00d4-40f0-bbea-7330237c7027.png" 
