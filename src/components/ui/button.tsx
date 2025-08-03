@@ -20,6 +20,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         nav: "text-nav-text hover:text-primary font-semibold",
         "start-free": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-full shadow-[inset_0px_0.5px_0px_rgba(255,255,255,0.32),inset_0px_-1.5px_0px_rgba(255,255,255,0.32)]",
+        "hero": "bg-gradient-to-b from-emerald-400 to-emerald-600 text-white hover:from-emerald-500 hover:to-emerald-700 rounded-3xl shadow-[inset_0px_0.537696px_0px_rgba(255,255,255,0.32),inset_0px_-1.61309px_0px_rgba(255,255,255,0.32)]",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -28,6 +29,7 @@ const buttonVariants = cva(
         icon: "h-10 w-10",
         nav: "h-6 px-0 text-sm",
         "start-free": "h-11 px-5 text-sm",
+        "hero": "h-[57px] px-[30px] text-[17px] leading-[30px] tracking-[-0.215px]",
       },
     },
     defaultVariants: {

@@ -54,6 +54,8 @@ export default {
 				},
 				'nav-text': 'hsl(var(--nav-text))',
 				'logo-text': 'hsl(var(--logo-text))',
+				'hero-text': 'hsl(var(--hero-text))',
+				'hero-subtitle': 'hsl(var(--hero-subtitle))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -64,6 +66,10 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'bricolage': ['Bricolage Grotesque', 'sans-serif'],
+				'geist': ['Geist', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
