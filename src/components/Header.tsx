@@ -15,11 +15,14 @@ const Header = () => {
               <img 
                 src="/easemyexpo-logo.png" 
                 alt="EaseMyExpo Logo" 
-                className="w-6 h-6 md:w-8 md:h-8 object-contain"
+                className="w-8 h-8 md:w-10 md:h-10 object-contain"
               />
-              <span className="text-logo-text font-normal text-sm md:text-base tracking-[-0.5px] font-['Bricolage_Grotesque',_'Inter',_sans-serif]">
-                Easemyexpo
-              </span>
+              <span className="text-logo-text font-normal text-sm md:text-base tracking-[-0.5px] mx-1">×</span>
+              <img 
+                src="/lovable-uploads/msm_logo.png" 
+                alt="MSM Logo" 
+                className="w-16 h-16 md:w-19 md:h-19 object-contain"
+              />
             </div>
           </div>
 
@@ -38,21 +41,6 @@ const Header = () => {
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:flex items-center gap-6 lg:gap-10">
-            <div className="flex items-center gap-1">
-              <Button variant="nav" size="nav">
-                Get started
-              </Button>
-              <ChevronDown className="w-[18px] h-[18px] text-nav-text" strokeWidth={1.5} />
-            </div>
-            
-            <Button variant="nav" size="nav">
-              Docs
-            </Button>
-            
-            <Button variant="nav" size="nav">
-              Blog
-            </Button>
-            
             <Button variant="nav" size="nav">
               About
             </Button>
@@ -68,13 +56,17 @@ const Header = () => {
 
           {/* Desktop Right Side Actions */}
           <div className="hidden md:flex md:absolute md:right-0 items-center gap-3 lg:gap-5">
-            <Button variant="nav" size="nav">
-              Login
-            </Button>
+            <a href="https://ease-my-expo-chat.netlify.app/login" target="_blank" rel="noopener noreferrer">
+              <Button variant="nav" size="nav">
+                Login
+              </Button>
+            </a>
             
-            <Button variant="start-free" size="start-free">
-              Start for free
-            </Button>
+            <a href="https://ease-my-expo-chat.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <Button variant="start-free" size="start-free">
+                Signup
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -82,20 +74,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-background border-t border-gray-200 shadow-lg">
             <div className="flex flex-col p-4 space-y-4">
-              <div className="flex items-center gap-1">
-                <Button variant="nav" size="nav" className="justify-start">
-                  Get started
-                </Button>
-                <ChevronDown className="w-[18px] h-[18px] text-nav-text" strokeWidth={1.5} />
-              </div>
-              
-              <Button variant="nav" size="nav" className="justify-start">
-                Docs
-              </Button>
-              
-              <Button variant="nav" size="nav" className="justify-start">
-                Blog
-              </Button>
+
               
               <Button variant="nav" size="nav" className="justify-start">
                 About
@@ -110,13 +89,17 @@ const Header = () => {
               </Button>
 
               <div className="border-t border-gray-200 pt-4 flex flex-col space-y-3">
-                <Button variant="nav" size="nav" className="justify-start">
-                  Login
-                </Button>
+                <a href="https://ease-my-expo-chat.netlify.app/login" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button variant="nav" size="nav" className="justify-start w-full">
+                    Login
+                  </Button>
+                </a>
                 
-                <Button variant="start-free" size="start-free" className="w-full">
-                  Start for free
-                </Button>
+                <a href="https://ease-my-expo-chat.netlify.app/" target="_blank" rel="noopener noreferrer" className="w-full">
+                  <Button variant="start-free" size="start-free" className="w-full">
+                    Signup
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

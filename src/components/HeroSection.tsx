@@ -241,9 +241,11 @@ const HeroSection = () => {
             and after the event. Join a community built for exhibitors, visitors, and everything in between.
           </p>
           
-          <Button variant="hero" size="hero" className="font-semibold relative z-10 text-sm md:text-base">
-            Get Started →
-          </Button>
+          <a href="https://ease-my-expo-chat.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <Button variant="hero" size="hero" className="font-semibold relative z-10 text-sm md:text-base">
+              Get Started →
+            </Button>
+          </a>
         </div>
 
         {/* Interface Mockup Section */}
