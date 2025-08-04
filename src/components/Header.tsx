@@ -56,13 +56,13 @@ const Header = () => {
 
           {/* Desktop Right Side Actions */}
           <div className="hidden md:flex md:absolute md:right-0 items-center gap-3 lg:gap-5">
-            <a href="https://ease-my-expo-chat.netlify.app/login" target="_blank" rel="noopener noreferrer">
+            <a href="https://app.easemyexpo.in/login" target="_blank" rel="noopener noreferrer">
               <Button variant="nav" size="nav">
                 Login
               </Button>
             </a>
             
-            <a href="https://ease-my-expo-chat.netlify.app/" target="_blank" rel="noopener noreferrer">
+            <a href="https://app.easemyexpo.in/" target="_blank" rel="noopener noreferrer">
               <Button variant="start-free" size="start-free">
                 Signup
               </Button>
@@ -89,13 +89,13 @@ const Header = () => {
               </Button>
 
               <div className="border-t border-gray-200 pt-4 flex flex-col space-y-3">
-                <a href="https://ease-my-expo-chat.netlify.app/login" target="_blank" rel="noopener noreferrer" className="w-full">
+                <a href="https://app.easemyexpo.in/login" target="_blank" rel="noopener noreferrer" className="w-full">
                   <Button variant="nav" size="nav" className="justify-start w-full">
                     Login
                   </Button>
                 </a>
                 
-                <a href="https://ease-my-expo-chat.netlify.app/" target="_blank" rel="noopener noreferrer" className="w-full">
+                <a href="https://app.easemyexpo.in/" target="_blank" rel="noopener noreferrer" className="w-full">
                   <Button variant="start-free" size="start-free" className="w-full">
                     Signup
                   </Button>
