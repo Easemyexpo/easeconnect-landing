@@ -13,7 +13,7 @@ const features = [
       'Personalized "you may like" suggestions in your feed',
       "Instant prompts to introduce yourself",
     ],
-    imageSrc: "/lovable-uploads/image.png",
+    imageSrc: "/lovable-uploads/smartmatch.png",
     imagePosition: "right",
   },
   {
@@ -25,7 +25,7 @@ const features = [
       "Pre-event, during-event, and post-event engagement",
       "Easy chat and Q&A functionality",
     ],
-    imageSrc: "/lovable-uploads/image.png",
+    imageSrc: "/lovable-uploads/communities.png",
     imagePosition: "left",
   },
   {
@@ -37,7 +37,7 @@ const features = [
       "No additional apps or registrations needed",
       "Access to all exhibitor materials instantly",
     ],
-    imageSrc: "/lovable-uploads/image.png",
+    imageSrc: "/lovable-uploads/download.png",
     imagePosition: "right",
   },
   {
@@ -49,7 +49,7 @@ const features = [
       "Integrated meeting scheduler",
       "Eliminate scheduling back-and-forth",
     ],
-    imageSrc: "/lovable-uploads/image.png",
+    imageSrc: "/lovable-uploads/chat.png",
     imagePosition: "left",
   },
 ];
