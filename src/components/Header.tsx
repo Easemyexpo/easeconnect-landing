@@ -17,12 +17,6 @@ const Header = () => {
                 alt="EaseMyExpo Logo" 
                 className="w-8 h-8 md:w-10 md:h-10 object-contain"
               />
-              <span className="text-logo-text font-normal text-sm md:text-base tracking-[-0.5px] mx-1">×</span>
-              <img 
-                src="/lovable-uploads/msm_logo.png" 
-                alt="MSM Logo" 
-                className="w-16 h-16 md:w-19 md:h-19 object-contain"
-              />
             </div>
           </div>
 
